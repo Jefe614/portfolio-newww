@@ -1,0 +1,135 @@
+/* projects.css */
+
+
+/* Reset default styles */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Set body font and background */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+/* Section styles */
+
+#projects {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+/* Project styles */
+
+.project {
+    display: flex;
+    flex-direction: column;
+    /* Display images and description in a column */
+    align-items: center;
+    /* Center align images and description horizontally */
+    text-align: center;
+    /* Center align project info */
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.project img {
+    width: 700px;
+    height: 300;
+    margin-bottom: 20px;
+    /* Add space between image and description */
+}
+
+.project-info {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    /* Allow description to take remaining space */
+}
+
+.project-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: underline;
+}
+
+.project-info p {
+    margin-bottom: 20px;
+}
+
+.project-info ul {
+    margin-bottom: 20px;
+}
+
+.project-info ul li {
+    margin-bottom: 5px;
+}
+
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+    .project {
+        text-align: left;
+        /* Align project info to the left on smaller screens */
+        border-radius: 4px;
+    }
+    .project img {
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #aaa;
+}

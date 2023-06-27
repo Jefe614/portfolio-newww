@@ -1,0 +1,75 @@
+/* Add this CSS code to your about.css file */
+
+body {
+    background-color: #f4f4f4;
+}
+
+.about-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.about-text h1 {
+    font-size: 36px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: rgb(0, 3, 5);
+}
+
+.about-text p {
+    font-size: 16px;
+    color: rgb(0, 3, 5);
+    line-height: 1.5;
+}
+
+.skills-container {
+    text-align: center;
+}
+
+.skills-heading {
+    color: #f30505;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.my-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.my-list li {
+    margin-bottom: 10px;
+    color: rgb(228, 98, 11);
+}
+
+.my-list li i {
+    margin-right: 5px;
+}
+
+footer {
+    background-color: rgb(245, 181, 181);
+    color: rgb(255, 240, 241);
+    text-align: center;
+}
+
+
+/* You can add more CSS styles to customize the appearance of the about section and skills list */
