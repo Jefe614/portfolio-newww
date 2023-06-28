@@ -1,1 +1,28 @@
+name: Deploy Website
+
+on:
+  push:
+    branches:
+      - main  # Replace with the branch you want to trigger the deployment on
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build Website
+        run: |
+          # Add commands to build your website here
+          # For example, if using npm:
+          npm install
+          npm run build
+
+      - name: Deploy to Hosting Provider
+        run: |
+          # Add commands to deploy your website here
+          # For example, if using FTP:
+          curl --ftp-create-dirs -T ./build/* -u $FTP_USERNAME:$FTP_PASSWORD ftp://example.com/public_html/
 
